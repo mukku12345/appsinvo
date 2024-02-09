@@ -16,9 +16,9 @@ db.mongoose.connect(db.url).then(()=>{
 })
 
 
-// app.use("/",(req,res)=>{
-//   res.json("welcome to my web")
-// })
+app.use("/",(req,res)=>{
+  res.json("welcome to my web")
+})
 require("./routes/user.routes")(app);
 app.listen(port,()=>{
   
